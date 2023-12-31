@@ -1,9 +1,16 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 dotenv.config();
 const port = process.env.PORT || 5050;
 const app = express();
+
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://jazzy-malabi-4b982c.netlify.app/',
+];
+app.use(cors({ credentials: true, origin: allowedOrigins }));
 
 // Body parser
 app.use(express.json());
