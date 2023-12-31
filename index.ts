@@ -9,7 +9,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: 'https://jazzy-malabi-4b982c.netlify.app/',
+    origin: true,
   })
 );
 
