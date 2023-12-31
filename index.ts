@@ -6,11 +6,12 @@ dotenv.config();
 const port = process.env.PORT || 5050;
 const app = express();
 
-const allowedOrigins = [
-  'https://jazzy-malabi-4b982c.netlify.app/',
-  'http://localhost:3000',
-];
-app.use(cors({ credentials: true, origin: allowedOrigins }));
+app.use(
+  cors({
+    credentials: true,
+    origin: 'https://jazzy-malabi-4b982c.netlify.app/',
+  })
+);
 
 // Body parser
 app.use(express.json());
