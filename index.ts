@@ -7,8 +7,8 @@ const port = process.env.PORT || 5050;
 const app = express();
 
 const allowedOrigins = [
-  'http://localhost:3000',
   'https://jazzy-malabi-4b982c.netlify.app/',
+  'http://localhost:3000',
 ];
 app.use(cors({ credentials: true, origin: allowedOrigins }));
 
