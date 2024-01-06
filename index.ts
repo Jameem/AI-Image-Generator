@@ -9,7 +9,11 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: ['https://jazzy-malabi-4b982c.netlify.app'],
+    origin: [
+      'https://jazzy-malabi-4b982c.netlify.app',
+      'https://ai-image-jm.netlify.app/',
+      'http://localhost:3000',
+    ],
   })
 );
 
