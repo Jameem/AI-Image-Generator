@@ -10,8 +10,8 @@ app.use(
   cors({
     credentials: true,
     origin: [
+      'https://ai-image-jm.netlify.app',
       'https://jazzy-malabi-4b982c.netlify.app',
-      'https://ai-image-jm.netlify.app/',
       'http://localhost:3000',
     ],
   })
